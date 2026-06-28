@@ -17,4 +17,4 @@ jobs:
     - name: Delete Old Docker Image
       run: docker rm -f cicd-pipeline-container || true
     - name: Run Docker Container
-      run: docker run -d -p 8080:8080 --name cicd-pipeline-container kshitijsingh1076222/cicd-pipeline:latest
+      run: docker run -d -p 8080:3000 --name cicd-pipeline-container kshitijsingh1076222/cicd-pipeline:latest
